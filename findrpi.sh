@@ -11,7 +11,7 @@ close $f
 
 foreach ip $ips {
     spawn ssh pi@$ip
-    expect "$ " {
+    expect "~" {
         interact
     }
 }
